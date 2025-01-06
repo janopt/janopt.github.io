@@ -1,0 +1,94 @@
+
+/*
+.reveal {
+    color: #2e2e2e
+}
+*/
+
+/* 127, 127-32 = 95, 127+32 = 159*/
+:root {
+  --janopt-color: rgb(127 127 127);
+  --janopt-color-light: rgb(159 159 159);
+  --janopt-color-dark: rgb(95 95 95);
+  /* simple.css redefinitions */
+  --r-link-color: var(--janopt-color-light);
+  --r-link-color-dark: var(--janopt-color-dark);
+  --r-link-color-hover: var(--janopt-color-dark);
+}
+
+
+/* to remove arrows */
+.reveal .controls .controls-arrow:after,
+.reveal .controls .controls-arrow:before {
+    all: unset;
+}
+
+.reveal .controls .navigate-left {
+    width: 0; 
+    height: 0;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent; 
+    border-right: 1.5em solid var(--janopt-color-light);
+    transform: translateX(-0px);
+}
+
+.reveal .controls .navigate-right {
+    width: 0; 
+    height: 0;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent; 
+    border-left: 1.5em solid var(--janopt-color-light); 
+    transform: translateX(-15px);
+}
+
+.reveal .controls .navigate-up {
+    width: 0; 
+    height: 0;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent; 
+    border-bottom: 1.5em solid var(--janopt-color-light);
+    transform: translateY(-0px);
+}
+
+.reveal .controls .navigate-down {
+    width: 0; 
+    height: 0;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent; 
+    border-top: 1.5em solid var(--janopt-color-light);
+    transform: translateY(-15px);
+}
+
+/* code background color and text color */
+.hljs {
+    background: #ffffff;
+    color: var(--janopt-color-dark);
+}
+
+/* code font size */
+.reveal pre {
+    font-size: 0.45em;
+}
+
+/* 4x4 details grid */
+.janopt-grid-row {
+    height: 23%;
+}
+
+.janopt-grid-row img {
+    height: 100%;
+}
+
+/* 4x4 details links table */
+.janopt-table tr td {
+    all: unset;
+    float: left;
+    font-size: 0.45em;
+    padding: 3em 1em 3em;
+}
+
+.janopt-table p {
+    margin: 0em;
+}
+
+
